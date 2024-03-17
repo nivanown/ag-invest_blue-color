@@ -1,4 +1,638 @@
-/* 2700 */
-@media (max-width: 2700px) {
-	
+/* 1340 */
+@media (max-width: 1340px) {
+
+[class*="__container"] {
+	max-width: 1024px;
+	}	
+
+.header__col {
+	gap: 0 70px;
+	}
+
+.main-nav ul {
+	gap: 0 20px;
+	}
+
+.hero-section__description {
+	padding: 180px 0 30px;
+	}
+
+.counter__number {
+	font-size: 30px;
+	line-height: 30px;
+	}
+
+.hero-section__title {
+	font-size: 50px;
+	line-height: 60px;
+	}
+
+.counter-wrap__title {
+	font-size: 30px;
+  line-height: 30px;
+	}
+
+.btn_big-size {
+	padding: 14px 30px;
+	font-size: 14px;
+	line-height: 28px;
+	}
+
+}
+
+/* 1024 */
+@media (max-width: 1024px) {
+
+.about-section {
+	padding: 100px 0;
+	}
+
+.promo-section {
+	padding: 100px 0;
+	}
+
+.countries-section {
+	padding: 100px 0;
+	}
+
+.team {
+	gap: 0 15px;
+	}
+
+.team__item {
+	padding: 20px;
+	}
+
+.small-text {
+	font-size: 16px;
+	line-height: 26px;
+	}
+
+.title {
+	font-size: 40px;
+	line-height: 50px;
+	}
+
+.info-col {
+	gap: 15px 15px;
+	}
+
+.info-col__item {
+	gap: 0 15px;
+	}
+
+}
+
+/* 900 */
+@media (max-width: 1023px) {
+
+body.scroll-none {
+	overflow: hidden;
+	}
+
+.m-overlay {
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s all;
+	}
+
+.m-overlay.show {
+	right: 240px;
+	opacity: 1;
+	visibility: visible;
+	}
+
+.menu-btn {
+	display: block;
+	}
+
+.header__col {
+	position: fixed;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 30px;
+	width: 240px;
+	height: 100%;
+	top: 0;
+	right: -240px;
+	overflow-y: scroll;
+	background: var(--primary-background-color);
+	z-index: 99;
+	transition: .3s right;
+	}
+
+.header__col.show {
+	right: 0;
+	}
+
+.close-btn {
+	position: absolute;
+	display: block;
+	top: 15px;
+	right: 15px;
+	}
+
+.main-nav {
+	margin: 0 0 20px;
+	width: 100%;
+	}
+
+.main-nav ul {
+	display: block;
+	text-align: center;
+	}
+
+.main-nav li:before {
+	display: none;
+	}
+
+.main-nav li {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	}
+
+.main-nav a,
+.main-nav span {
+	display: block;
+	padding: 7px 0;
+	}
+
+.main-nav .active a,
+.main-nav .active span {
+	color: var(--tertiary-text-color);
+	}
+
+.user-panel {
+	flex-direction: column;
+	gap: 10px 0;
+	width: 100%;
+	margin: 0 0 20px;
+	}
+
+.user-panel .btn {
+	width: 100%;
+	}
+
+.btn_transparent-bg {
+  background: rgb(53,32,225);
+  background: linear-gradient(90deg, rgba(53,32,225,1) 0%, rgba(64,115,240,1) 100%);
+  }
+
+.btn_transparent-bg:hover {
+  background: rgb(53,32,225);
+  background: linear-gradient(90deg, rgba(53,32,225,1) 0%, rgba(64,115,240,1) 100%);
+  }
+
+.header__col .language-nav {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	}
+
+.hero-section {
+	height: auto;
+	}
+
+.hero-section__description {
+	height: auto;
+	}
+
+.countries {
+	display: flex;
+  gap: 0 15px;
+  margin: 0 -15px;
+  padding: 0 15px;
+  max-width: inherit;
+  width: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+	}
+
+.countries__item {
+	flex-shrink: 0;
+	width: 200px;
+	white-space: normal;
+	}
+
+}
+
+/* 900 */
+@media (max-width: 900px) {
+
+body {
+	letter-spacing: 0.5px;
+	}
+
+.header__contacts {
+	gap: 0 15px;
+	}
+
+.info-text img {
+	width: 16px;
+	}
+
+.info-text {
+	font-size: 10px;
+	}
+
+.language-nav img {
+	margin: 0 5px 0 0;
+	width: 16px;
+	}
+
+.language-nav ul {
+	gap: 0 5px;
+	}
+
+.language-nav li {
+	font-size: 10px;
+	}
+
+.logo img {
+	margin: 0 15px 0 0;
+	width: 40px;
+	}
+
+.logo__text {
+	font-size: 20px;
+	}
+
+.btn {
+	padding: 11px 20px 10px;
+	line-height: 16px;
+	}
+
+.btn_big-size {
+	padding: 14px 30px;
+	line-height: 20px;
+	}
+
+.hero-section__title {
+	margin: 0 0 20px;
+	font-size: 40px;
+	line-height: 50px;
+	}
+
+.hero-section__description p {
+	margin: 0 0 20px;
+	line-height: 24px;
+	}
+
+.counter-wrap {
+	padding: 4.44vw 0;
+	}
+
+.counter-wrap__title {
+	margin: 0 0 5.56vw;
+	font-size: 3.33vw;
+	line-height: 3.33vw;
+	}
+
+.counter__item {
+	padding: 0 2.78vw;
+	}
+
+.counter__number {
+	margin: 0 0 1.67vw;
+	font-size: 3.33vw;
+	line-height: 3.33vw;
+	}
+
+.counter__text {
+	font-size: 1.56vw;
+  line-height: 2.22vw;
+	}
+
+.about-section {
+	padding: 70px 0;
+	}
+
+.about-info p {
+	margin: 0 0 30px;
+	}
+
+section {
+	padding: 70px 0;
+	}
+
+.countries-section {
+	padding: 70px 0;
+	}
+
+.team {
+	display: flex;
+  gap: 0 15px;
+  margin: 0 -15px;
+  padding: 0 15px;
+  max-width: inherit;
+  width: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+	}
+
+.team__item {
+	flex-shrink: 0;
+	width: 360px;
+	white-space: normal;
+	}
+
+.news {
+	display: flex;
+  gap: 0 15px;
+  margin: 0 -15px;
+  padding: 0 15px;
+  max-width: inherit;
+  width: auto;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+	}
+
+.news__item {
+	flex-shrink: 0;
+	width: 360px;
+	white-space: normal;
+	}
+
+.download-app dd {
+	width: 20px;
+	}
+
+.footer__top-panel {
+	padding: 30px 0;
+	}
+
+.footer__row {
+	flex-wrap: wrap;
+	gap: 30px 15px;
+	}
+
+.footer__col:first-child {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 0 30px;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+	}
+
+}
+
+/* 860 */
+@media (max-height: 860px) {
+
+.hero-section {
+	height: auto;
+	}
+
+.hero-section__description {
+	height: auto;
+	}
+
+}
+
+/* 809 */
+@media (max-width: 809px) {
+
+.hero-section__title {
+	font-size: 30px;
+	line-height: 40px;
+	}
+
+.hero-section {
+	height: auto;
+	}
+
+.hero-section__description {
+	height: auto;
+	}
+
+.section__top-panel {
+	flex-direction: column;
+	gap: 10px 0;
+	}
+
+.section__top-panel .btn {
+	display: none;
+	}
+
+.mobile-btn-panel {
+	display: flex;
+	}
+
+.about-info .title {
+	margin: 0 0 20px;
+	}
+
+.about-info p {
+	font-size: 14px;
+	line-height: 24px;
+	}
+
+.btn_big-size {
+	padding: 10px 20px;
+	}
+
+.btn_file-i:before {
+	width: 24px;
+	height: 24px;
+	}
+
+.info-col__item {
+	grid-template-columns: repeat(1, 1fr);
+	gap: 15px 0;
+	}
+
+.info-col__photo {
+	height: 300px;
+	}
+
+.info-col__item:nth-child(2n+1) .info-col__photo {
+	order: 0;
+	}
+
+.info-col__item p {
+	font-size: 14px;
+	line-height: 24px;
+	}
+
+.promo-section {
+	padding: 50px 0;
+	}
+
+.title {
+	margin: 0 0 30px;
+	font-size: 30px;
+	line-height: 40px;
+	}	
+
+.countries__item {
+	padding: 20px;
+	width: 180px;
+	border-radius: 10px;
+	}
+
+.countries__icon {
+	width: 80px;
+	height: 80px;
+	}
+
+.countries__icon img {
+	width: 40px;
+	}
+
+.countries__title {
+	font-size: 16px;
+	}
+
+.team-section {
+	padding: 50px 0;
+	}
+
+.team__item {
+	padding: 15px;
+	width: 300px;
+	border-radius: 10px;
+	}
+
+.team__photo img {
+	border-radius: 10px;
+	}
+
+.section__top-panel {
+	margin: 0 0 30px;
+	}
+
+.news__item {
+	padding: 15px;
+	width: 300px;
+	border-radius: 10px;
+	}
+
+.news__photo {
+	border-radius: 10px;
+	}
+
+.news__photo img {
+	border-radius: 10px;
+	}
+
+.news__title {
+	font-size: 20px;
+	line-height: 24px;
+	}
+
+.news__more-link {
+	padding: 10px 15px;
+	font-size: 14px;
+	}
+
+}
+
+/* 767 */
+@media (max-width: 767px) {
+
+.hero-section__description p br {
+	display: none;
+	}
+
+.counter-wrap {
+	border-radius: 10px;
+	}
+
+.info-col__photo {
+	height: 200px;
+	}
+
+.info-col__photo img {
+	border-radius: 10px;
+	}
+
+.info-col__description {
+	padding: 25px;
+	border-radius: 10px;
+	}
+
+.company-item {
+	border-radius: 10px;
+	}
+
+.company-item__photo img {
+	border-radius: 10px 10px 0 0;
+	}
+
+.company-item__title {
+	font-size: 20px;
+	}
+
+.company-item__description {
+	padding: 15px;
+	}
+
+.founder {
+	border-radius: 10px;
+	}
+
+.company-slider .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, 
+.company-slider .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	width: 24px;
+	height: 24px;
+	}
+
+section {
+	padding: 50px 0;
+	}
+
+.title br {
+	display: none;
+	}
+
+}
+
+/* 600 */
+@media (max-width: 600px) {
+
+.header__top-panel {
+	display: none;
+	}
+
+.hero-section__description {
+	padding: 120px 0 30px;
+	}
+
+.title {
+	font-size: 24px;
+	line-height: 28px;
+	}
+
+.info-col__title {
+	font-size: 24px;
+	line-height: 28px;
+	}
+
+.footer__info {
+	flex-direction: column;
+	align-items: center;
+	gap: 15px 0;
+	}
+
+}
+
+/* 374 */
+@media (max-width: 374px) {
+
+.team__item {
+	width: 280px;
+	}
+
+.news__item {
+	width: 280px;
+	}
+
 }

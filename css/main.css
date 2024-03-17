@@ -397,7 +397,6 @@ textarea:focus {
   font-size: 11px;
   text-transform: uppercase;
   line-height: 20px;
-  letter-spacing: 1px;
   }
 
 .info-text img {
@@ -409,6 +408,7 @@ textarea:focus {
 .language-nav {
   display: flex;
   align-items: center;
+  color: var(--fifth-text-color);
   }
 
 .language-nav img {
@@ -512,6 +512,73 @@ textarea:focus {
   gap: 0 15px;
   }
 
+/* menu-btn */
+.menu-btn {
+  position: relative;
+  display: none;
+  cursor: pointer;
+  }
+
+.menu-btn:before {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  cursor: pointer;
+  }
+
+.menu-btn span { 
+  display: block;
+  margin: 4px 0;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  transition: margin 0.4s cubic-bezier(0.79, 0.21, 0.06, 0.81), 
+              transform 0.4s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  cursor: pointer;
+  }
+
+.menu-btn.close span { 
+  margin: -2px;
+  }
+
+.menu-btn.close span:nth-child(1) {
+  transform: rotate(-45deg);
+  }
+
+.menu-btn.close span:nth-child(2) {
+  transform: scale(0)
+  }
+
+.menu-btn.close span:nth-child(3) {
+  transform: rotate(45deg)
+  }
+
+/* header__col */
+.header__col {
+  display: flex;
+  align-items: center;
+  gap: 0 200px;
+  }
+
+.header__col .language-nav {
+  display: none;
+  }
+
+/* close-btn */
+.close-btn {
+  display: none;
+  width: 14px;
+  height: 14px;
+  background: url("../img/icons/close-icon.png") center no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+  }
+
 /* hero-section */
 .hero-section {
   position: relative;
@@ -589,6 +656,7 @@ textarea:focus {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 30px 0;
   padding: 250px 0 30px;
   text-align: center;
   height: 100vh;
@@ -702,6 +770,13 @@ section {
 
 .section_dark-bg .title {
   color: var(--fifth-text-color);
+  }
+
+/* mobile-btn-panel */
+.mobile-btn-panel {
+  display: none;
+  justify-content: center;
+  padding: 30px 0 0;
   }
 
 /* small-text */
@@ -868,7 +943,7 @@ section {
   font-size: 22px;
   font-weight: var(--secondary-font-weight);
   letter-spacing: normal;
-  line-height: 30px;
+  line-height: 24px;
   }
 
 .company-item__title img {
@@ -1281,6 +1356,7 @@ section {
   color: var(--primary-text-color);
   font-size: 14px;
   text-transform: uppercase;
+  line-height: 18px;
   border: 1px solid var(--primary-border-color);
   border-radius: 30px;
   transition: .3s all;
@@ -2113,6 +2189,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 0 20px;
   }
 
 /* logo */
@@ -2280,4 +2357,16 @@ section {
 
 .download-app dd img {
   width: 100%;
+  }
+
+/* m-overlay */
+.m-overlay {
+  position: absolute;
+  display: none;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.5);
+  z-index: 98;
   }
