@@ -64,6 +64,24 @@ var swiper = new Swiper('.company-slider', {
     clickable: true,
     el: '.company-slider .swiper-pagination',
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    580: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    900: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  }, 
 });
 
 /*- brans-slider -*/
@@ -77,15 +95,15 @@ var swiper = new Swiper('.brans-slider', {
   spaceBetween: 30,
   breakpoints: {
     0: {
-      slidesPerView: 'auto',
-      spaceBetween: 130,
+      slidesPerView: 3,
+      spaceBetween: 50,
     },
     680: {
-      slidesPerView: 5,
+      slidesPerView: 3,
   		spaceBetween: 50,
     },
-    860: {
-      slidesPerView: 5,
+    809: {
+      slidesPerView: 4,
   		spaceBetween: 90,
     },
     1025: {
@@ -99,4 +117,23 @@ var swiper = new Swiper('.brans-slider', {
 $('.accordion__header').click(function() {
   $(this).next().slideToggle(200);
   $(this).toggleClass('show', 200);
+});
+
+/*- mobile-menu -*/
+$('.menu-btn').click(function(e) {
+  $('.m-overlay').addClass('show');
+  $('.header__col').addClass('show');
+  $('body').addClass('scroll-none');
+});
+
+$('.close-btn').click(function(e) {
+  $('.m-overlay').removeClass('show');
+  $('.header__col').removeClass('show');
+  $('body').removeClass('scroll-none');
+});
+
+$('.m-overlay').click(function(e) {
+  $('.m-overlay').removeClass('show');
+  $('.header__col').removeClass('show');
+  $('body').removeClass('scroll-none');
 });
